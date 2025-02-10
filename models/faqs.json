@@ -1,0 +1,42 @@
+[
+    {
+        "question": "Where is my order?",
+        "answer": "You can track your order in the 'Orders' section on our website."
+    },
+    {
+        "question": "How can I track my package?",
+        "answer": "You can track your order in the 'Orders' section on our website."
+    },
+    {
+        "question": "Track my shipment",
+        "answer": "You can track your order in the 'Orders' section on our website."
+    },
+    {
+        "question": "How do I contact support?",
+        "answer": "You can contact our support team via live chat or call our helpline."
+    },
+    {
+        "question": "I need help from a human agent",
+        "answer": "You can contact our support team via live chat or call our helpline."
+    },
+    {
+        "question": "How can I talk to customer support?",
+        "answer": "You can contact our support team via live chat or call our helpline."
+    },
+    {
+        "question": "How can I get a refund?",
+        "answer": "To request a refund, go to the 'Returns' page and follow the instructions."
+    },
+    {
+        "question": "Can I return an item?",
+        "answer": "To request a refund, go to the 'Returns' page and follow the instructions."
+    },
+    {
+        "question": "I want to return my purchase",
+        "answer": "To request a refund, go to the 'Returns' page and follow the instructions."
+    },
+    {
+        "question": "Are there any current discounts?",
+        "answer": "Yes! We have ongoing discounts. Check our promotions page for details."
+    }
+]

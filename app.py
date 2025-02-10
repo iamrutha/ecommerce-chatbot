@@ -23,13 +23,14 @@ def get_best_answer(user_query):
     query_embedding = model.encode([user_query])
     distances, closest_index = faiss_index.search(query_embedding, 1)
 
-    best_match_index = closest_index[0][0]
+    best_match_index = int(closest_index[0][0])  # Convert NumPy int to Python int
     confidence_score = distances[0][0]  # Lower is better
 
     if confidence_score > 0.5:
         return "I'm not sure about that. Can you rephrase?"
 
-    return faqs[best_match_index]["answer"]
+    # ✅ Fix: Access the FAQ list correctly
+    return faqs["faqs"][best_match_index]["answer"]  
 
 # ✅ Streamlit UI
 st.title("💬 AI-Powered Customer Support Chatbot")
