@@ -5,17 +5,13 @@ import numpy as np
 from sentence_transformers import SentenceTransformer
 
 # ✅ Load the Embedding Model
-# st.write("🔄 Loading embedding model...")
 model = SentenceTransformer("all-MiniLM-L6-v2")
-# st.success("✅ Model loaded successfully!")
 
 # ✅ Load FAISS Index
-# st.write("🔄 Loading FAISS index...")
 faiss_index = faiss.read_index("models/faiss_index.bin")
-# st.success("✅ FAISS index loaded successfully!")
 
 # ✅ Load FAQs
-with open("data/faqs.json", "r", encoding="utf-8") as f:
+with open("models/faqs.json", "r", encoding="utf-8") as f:
     faqs = json.load(f)
 
 # ✅ Function to Get Best Answer with Confidence Score
@@ -29,17 +25,31 @@ def get_best_answer(user_query):
     if confidence_score > 0.5:
         return "I'm not sure about that. Can you rephrase?"
 
-    # ✅ Fix: Access the FAQ list correctly
-    return faqs["faqs"][best_match_index]["answer"]  
+    return faqs[best_match_index]["answer"]  # ✅ Corrected line
+
 
 # ✅ Streamlit UI
 st.title("💬 AI-Powered Customer Support Chatbot")
 st.write("Ask me anything about orders, shipping, returns, and discounts!")
 
-# Chat Interface
+# ✅ Initialize Chat History
+if "chat_history" not in st.session_state:
+    st.session_state.chat_history = []
+
+# ✅ Chat Interface
 user_input = st.text_input("Type your query here 👇")
 
 if st.button("Ask Chatbot"):
     if user_input:
         response = get_best_answer(user_input)
-        st.markdown(f"**Chatbot:** {response}")
+
+        # ✅ Append conversation to chat history
+        st.session_state.chat_history.append(("You", user_input))
+        st.session_state.chat_history.append(("Chatbot", response))
+
+# ✅ Display Chat History with Avatars
+for speaker, message in st.session_state.chat_history:
+    if speaker == "You":
+        st.markdown(f"🧑 **{speaker}:** {message}")
+    else:
+        st.markdown(f"🤖 **{speaker}:** {message}")
