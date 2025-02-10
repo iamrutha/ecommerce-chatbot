@@ -5,11 +5,35 @@
       "answer": "You can track your order in the 'Orders' section on our website."
     },
     {
+      "question": "How can I track my package?",
+      "answer": "You can track your order in the 'Orders' section on our website."
+    },
+    {
+      "question": "Track my shipment",
+      "answer": "You can track your order in the 'Orders' section on our website."
+    },
+    {
       "question": "How do I contact support?",
-      "answer": "You can contact our support team via live chat, phone, or email."
+      "answer": "You can contact our support team via live chat or call our helpline."
+    },
+    {
+      "question": "I need help from a human agent",
+      "answer": "You can contact our support team via live chat or call our helpline."
+    },
+    {
+      "question": "How can I talk to customer support?",
+      "answer": "You can contact our support team via live chat or call our helpline."
     },
     {
       "question": "How can I get a refund?",
+      "answer": "To request a refund, go to the 'Returns' page and follow the instructions."
+    },
+    {
+      "question": "Can I return an item?",
+      "answer": "To request a refund, go to the 'Returns' page and follow the instructions."
+    },
+    {
+      "question": "I want to return my purchase",
       "answer": "To request a refund, go to the 'Returns' page and follow the instructions."
     },
     {
@@ -18,7 +42,7 @@
     },
     {
       "question": "Can I cancel my order?",
-      "answer": "You can cancel your order if it has not been shipped yet. Please contact our customer support team with your order details."
+      "answer": "If your order hasn't been shipped yet, you can cancel it from the 'Orders' section."
     },
     {
       "question": "How can I change my shipping address?",
@@ -26,11 +50,11 @@
     },
     {
       "question": "Do you offer international shipping?",
-      "answer": "Yes, we offer international shipping to select countries. Check the 'Shipping Information' page for details."
+      "answer": "Yes, we offer international shipping. Please check the 'Shipping Information' page for more details."
     },
     {
       "question": "How long will my delivery take?",
-      "answer": "Shipping times vary based on location and shipping method. Estimated delivery dates are available on the 'Orders' page."
+      "answer": "Delivery time varies depending on your location. You can check the estimated delivery date on the 'Orders' page."
     },
     {
       "question": "Can I change the payment method for my order?",
@@ -42,10 +66,10 @@
     },
     {
       "question": "How do I apply a discount code?",
-      "answer": "Enter your discount code at checkout to receive a discount on your order."
+      "answer": "You can enter your discount code at checkout to receive a discount on your order."
     },
     {
-      "question": "What is your return policy?",
+      "question": "What are your return policies?",
       "answer": "You can return most items within 30 days of receipt. Please check our 'Returns' page for more details."
     },
     {
@@ -86,91 +110,7 @@
     },
     {
       "question": "How can I unsubscribe from your newsletter?",
-      "answer": "Click the 'Unsubscribe' link at the bottom of any of our emails to unsubscribe."
-    },
-    {
-      "question": "How can I create an account?",
-      "answer": "Click on 'Sign Up' at the top right of our website and follow the registration instructions."
-    },
-    {
-      "question": "What should I do if my package is lost or damaged?",
-      "answer": "If your package is lost or damaged, contact our customer support team immediately for assistance."
-    },
-    {
-      "question": "Can I change my shipping address after placing an order?",
-      "answer": "If your order has not shipped yet, you can update your shipping address by contacting customer support."
-    },
-    {
-      "question": "Do you offer gift wrapping services?",
-      "answer": "Yes, we offer gift wrapping for an additional fee, which can be selected during checkout."
-    },
-    {
-      "question": "Can I order without creating an account?",
-      "answer": "Yes, you can place an order as a guest, but creating an account allows for easier tracking of your orders."
-    },
-    {
-      "question": "Do you offer bulk or wholesale discounts?",
-      "answer": "Yes, we offer bulk discounts for certain products. Contact our support team for details."
-    },
-    {
-      "question": "How can I leave a product review?",
-      "answer": "Go to the product page on our website and click on 'Write a Review' to share your feedback."
-    },
-    {
-      "question": "Can I use multiple promo codes on a single order?",
-      "answer": "Only one promo code can typically be applied per order."
-    },
-    {
-      "question": "What should I do if I receive the wrong item?",
-      "answer": "If you receive the wrong item, contact our support team immediately to arrange a replacement."
-    },
-    {
-      "question": "Do you offer expedited shipping?",
-      "answer": "Yes, expedited shipping options are available at checkout."
-    },
-    {
-      "question": "Can I return a product if I changed my mind?",
-      "answer": "Yes, provided the product is in its original condition and packaging. Check our return policy for details."
-    },
-    {
-      "question": "Do you offer live chat support?",
-      "answer": "Yes, live chat support is available during business hours via our website."
-    },
-    {
-      "question": "Can I order a product as a gift?",
-      "answer": "Yes, you can ship the product directly to the recipient and add a gift message during checkout."
-    },
-    {
-      "question": "What should I do if my discount code is not working?",
-      "answer": "Check the terms and conditions of the code. If the issue persists, contact support."
-    },
-    {
-      "question": "Can I return a product if it was a final sale item?",
-      "answer": "Final sale items are usually non-returnable. Please check the product description for details."
-    },
-    {
-      "question": "Do you offer installation services for your products?",
-      "answer": "Installation services are available for select products. Contact our support team for details."
-    },
-    {
-      "question": "Can I return a product if it was purchased with a discount code?",
-      "answer": "Yes, but the refund will be processed based on the amount paid after the discount."
-    },
-    {
-      "question": "Can I request a custom or personalized product?",
-      "answer": "We do not currently offer custom orders or personalized products."
-    },
-    {
-      "question": "Can I return a product if it was purchased with a gift card?",
-      "answer": "Yes, refunds for gift card purchases will be issued as store credit."
-    },
-    {
-      "question": "Can I return a product if it was damaged during shipping?",
-      "answer": "Yes, contact our support team immediately to initiate a return and replacement."
-    },
-    {
-      "question": "Can I return a product if I no longer have the original packaging?",
-      "answer": "Returning a product in its original packaging is preferred, but contact support for guidance."
+      "answer": "You can unsubscribe from our newsletter by clicking the 'Unsubscribe' link at the bottom of any of our emails."
     }
   ]
 }
