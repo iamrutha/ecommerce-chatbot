@@ -3,6 +3,7 @@ import json
 import faiss
 import numpy as np
 from sentence_transformers import SentenceTransformer
+import time  # ✅ Added for "Thinking..." effect
 
 # ✅ Load the Embedding Model
 model = SentenceTransformer("all-MiniLM-L6-v2")
@@ -25,8 +26,7 @@ def get_best_answer(user_query):
     if confidence_score > 0.5:
         return "I'm not sure about that. Can you rephrase?"
 
-    return faqs[best_match_index]["answer"]  # ✅ Corrected line
-
+    return faqs[best_match_index]["answer"]  
 
 # ✅ Streamlit UI
 st.title("💬 AI-Powered Customer Support Chatbot")
@@ -36,18 +36,25 @@ st.write("Ask me anything about orders, shipping, returns, and discounts!")
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
+# ✅ Clear Chat Button
+if st.button("🗑️ Clear Chat"):
+    st.session_state.chat_history = []  # Clears chat history
+    st.success("Chat cleared!")
+
 # ✅ Chat Interface
 user_input = st.text_input("Type your query here 👇")
 
 if st.button("Ask Chatbot"):
     if user_input:
-        response = get_best_answer(user_input)
+        with st.spinner("🤖 Thinking..."):  # ✅ Show "Thinking..." effect
+            time.sleep(1)  # Simulate processing delay
+            response = get_best_answer(user_input)
 
         # ✅ Append conversation to chat history
         st.session_state.chat_history.append(("You", user_input))
         st.session_state.chat_history.append(("Chatbot", response))
 
-# ✅ Display Chat History with Avatars
+# ✅ Display Chat History
 for speaker, message in st.session_state.chat_history:
     if speaker == "You":
         st.markdown(f"🧑 **{speaker}:** {message}")
