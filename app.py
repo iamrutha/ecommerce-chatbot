@@ -4,18 +4,18 @@ import faiss
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
-# # ✅ Load the Embedding Model
-# st.write("🔄 Loading embedding model...")
+# ✅ Load the Embedding Model
+st.write("🔄 Loading embedding model...")
 model = SentenceTransformer("all-MiniLM-L6-v2")
-# st.success("✅ Model loaded successfully!")
+st.success("✅ Model loaded successfully!")
 
-# # ✅ Load FAISS Index
-# st.write("🔄 Loading FAISS index...")
+# ✅ Load FAISS Index
+st.write("🔄 Loading FAISS index...")
 faiss_index = faiss.read_index("models/faiss_index.bin")
-# st.success("✅ FAISS index loaded successfully!")
+st.success("✅ FAISS index loaded successfully!")
 
 # ✅ Load FAQs
-with open("data/faqs.json", "r", encoding="utf-8") as f:
+with open("models/faqs.json", "r", encoding="utf-8") as f:
     faqs = json.load(f)
 
 # ✅ Function to Get Best Answer with Confidence Score
