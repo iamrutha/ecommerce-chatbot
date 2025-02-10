@@ -15,7 +15,7 @@ faiss_index = faiss.read_index("models/faiss_index.bin")
 # st.success("✅ FAISS index loaded successfully!")
 
 # ✅ Load FAQs
-with open("models/faqs.json", "r", encoding="utf-8") as f:
+with open("data/faqs.json", "r", encoding="utf-8") as f:
     faqs = json.load(f)
 
 # ✅ Function to Get Best Answer with Confidence Score
